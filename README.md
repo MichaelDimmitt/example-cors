@@ -34,6 +34,11 @@ You can also create this file and add `*` into it, all with one command:
 echo '*' > CORS
 ```
 
+Typical usage: 
+```bash
+npm build build; cp build/index.html build/200.html; echo '*' > build/CORS; surge build appname.surge.sh
+```
+
 ### Adding CORS for specific domains only
 
 If you want your resources to be setup for CORS, but only with a specific, other domain, you may list it in the `CORS` file instead. For example:
